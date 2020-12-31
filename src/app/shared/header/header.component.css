@@ -1,0 +1,63 @@
+.hero {
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url(../../../assets/img/superior.jpg);
+}
+
+.hero__container {
+    display: grid;
+    padding-top: 2rem;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+}
+
+
+/* Media Query Parte Del Menu */
+
+@media all and (min-width: 1001px) {
+    .hero__container {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
+
+.hero__logo {
+    width: 320px;
+}
+
+.nav__ul {
+    display: block;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+}
+
+
+/* Media Query Parte Lista Menu */
+
+@media all and (min-width: 533px) {
+    .nav__ul {
+        display: flex;
+    }
+}
+
+.nav__list {
+    margin-right: 2rem;
+}
+
+.nav__list:last-child {
+    margin-right: 0;
+}
+
+.nav__item {
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__item:hover {
+    cursor: pointer;
+}

@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
-/* Components */
+/* Other Modules */
+import { SharedModule } from '../shared/shared.module';
+
+/* Module Routes Child */
+import { PagesRoutingModule } from './pages-routing.module';
+
+/* Components Propios */
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [LandingPageComponent],
-  imports: [
-    CommonModule
-  ]
+  imports: [SharedModule, PagesRoutingModule],
+  exports: [LandingPageComponent]
 })
 export class PagesModule { }

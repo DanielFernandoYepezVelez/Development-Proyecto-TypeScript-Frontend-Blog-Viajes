@@ -1,0 +1,18 @@
+.nav__item {
+    color: #000000 !important;
+}
+
+.footer__p {
+    font-weight: bold;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+
+/* Media Query Parte Del Menu */
+
+@media all and (min-width: 354px) {
+    .footer__p {
+        font-size: 1rem;
+    }
+}
