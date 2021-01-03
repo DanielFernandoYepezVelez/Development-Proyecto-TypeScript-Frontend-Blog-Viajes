@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ViajesComponent } from './viajes/viajes.component';
+import { HttpClientModule } from '@angular/common/http';
+
+/* Components */
+import { InicioComponent } from './inicio/inicio.component';
+// import { ViajesComponent } from './viajes/viajes.component';
 
 @NgModule({
-  declarations: [ViajesComponent],
-  imports: [
-    CommonModule
-  ]
+  declarations: [InicioComponent],
+  imports: [CommonModule, HttpClientModule],
+  exports: [InicioComponent]
 })
 export class ComponentsModule { }
