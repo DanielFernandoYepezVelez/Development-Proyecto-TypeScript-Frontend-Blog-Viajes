@@ -1,0 +1,38 @@
+.main__container--global {
+    width: 780px;
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(2, minmax(100px, auto));
+    grid-template-columns: repeat(3, minmax(200px, 300px));
+}
+
+.main__img {
+    width: 100%;
+}
+
+.main__card--elements {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.main__btn {
+    margin-top: 1rem;
+    padding: .8rem 0;
+    text-align: center;
+    border-radius: .8rem;
+    border-color: #DC135F;
+    text-transform: uppercase;
+    background-color: #DC135F;
+}
+
+.main__btn:hover {
+    cursor: pointer;
+    border-color: rgb(192, 7, 78);
+    background-color: rgb(154, 5, 73);
+}
+
+.btn-success {
+    color: #ffffff;
+}
