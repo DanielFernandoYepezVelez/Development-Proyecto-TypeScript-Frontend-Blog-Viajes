@@ -1,10 +1,30 @@
+.titleH1 {
+    text-align: center;
+    margin: 1rem;
+}
+
 .main__container--global {
-    width: 780px;
+    width: 260px;
     display: grid;
     margin: 0 auto;
     grid-gap: 1rem;
     grid-template-rows: repeat(2, minmax(100px, auto));
-    grid-template-columns: repeat(3, minmax(200px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(80px, 249px));
+}
+
+
+/* Media Query Contenedor */
+
+@media all and (min-width: 531px) {
+    .main__container--global {
+        width: 514px;
+    }
+}
+
+@media all and (min-width: 797px) {
+    .main__container--global {
+        width: 780px;
+    }
 }
 
 .main__img {
