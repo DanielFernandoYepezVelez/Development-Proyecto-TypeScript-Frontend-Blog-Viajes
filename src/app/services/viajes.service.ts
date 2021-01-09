@@ -23,7 +23,7 @@ export class ViajesService {
    * <Viaje[]> --> Lo Que Retorna El Observable, Un Arreglo De 'N' Viajes
    */
   public viajes(): Observable<Viaje[]> {
-    return this.http.get<Viajes>(`${this.url}`)
+    return this.http.get<Viajes>(`${this.url}/inicio`)
                     .pipe(
                       /* tap((resServer) => console.log(resServer)), */
                       map((resp) => resp.viajes)
