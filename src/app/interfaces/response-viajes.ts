@@ -5,6 +5,11 @@ export interface Viajes {
     viajes: Viaje[];
 }
 
+export interface ViajeId {
+    ok: boolean;
+    viaje: Viaje[];
+}
+
 export interface Viaje {
     id: number;
     titulo: string;

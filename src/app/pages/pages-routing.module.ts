@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 /* Components */
 import { ViajesComponent } from '../components/viajes/viajes.component';
 import { InicioComponent } from '../components/inicio/inicio.component';
+import { ViajeDetailComponent } from './viaje-detail/viaje-detail.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NosotrosComponent } from '../components/nosotros/nosotros.component';
 import { TestimonialesComponent } from '../components/testimoniales/testimoniales.component';
