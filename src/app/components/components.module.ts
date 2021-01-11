@@ -5,11 +5,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 /* Components */
 import { InicioComponent } from './inicio/inicio.component';
-// import { ViajesComponent } from './viajes/viajes.component';
+import { ViajeComponent } from './viaje/viaje.component';
+import { ViajesComponent } from './viajes/viajes.component';
 
 @NgModule({
-  declarations: [InicioComponent],
+  declarations: [InicioComponent, ViajeComponent, ViajesComponent],
   imports: [CommonModule, RouterModule, HttpClientModule],
-  exports: [InicioComponent]
+  exports: [InicioComponent, ViajeComponent, ViajesComponent]
 })
 export class ComponentsModule { }

@@ -8,7 +8,6 @@ import { PagesModule } from './pages/pages.module';
 /* Components Propios */
 import { AppComponent } from './app.component';
 
-
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule, PagesModule],

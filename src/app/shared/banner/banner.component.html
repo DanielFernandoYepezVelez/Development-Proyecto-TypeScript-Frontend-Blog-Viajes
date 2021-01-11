@@ -2,16 +2,16 @@
     <div class="hero__container">
 
         <figure>
-            <a routerLink=''>
+            <a [routerLink]="['/landingPage']">
                 <img class="hero__logo" src="./assets/img/logo.svg" alt="logo-agencia">
             </a>
         </figure>
 
         <nav>
             <ul class="nav__ul">
-                <li class="nav__list"><a class="nav__item" href="#">Nosotros</a></li>
-                <li class="nav__list"><a class="nav__item" href="#">Viajes</a></li>
-                <li class="nav__list"><a class="nav__item" href="#">Testimoniales</a></li>
+                <li class="nav__list"><a class="nav__item" [routerLink]="['/agencia/nosotros']">Nosotros</a></li>
+                <li class="nav__list"><a class="nav__item" [routerLink]="['/agencia/viajes']">Viajes</a></li>
+                <li class="nav__list"><a class="nav__item" [routerLink]="['/agencia/testimoniales']">Testimoniales</a></li>
             </ul>
         </nav>
     </div>

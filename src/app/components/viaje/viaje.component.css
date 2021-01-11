@@ -1,0 +1,36 @@
+.main__detail {
+    display: grid;
+    padding: 0 .5rem;
+    justify-items: center;
+    grid-template-columns: auto;
+}
+
+
+/* Media Query Contenedor Detail */
+
+@media all and (min-width: 768px) {
+    .main__detail {
+        justify-content: center;
+        grid-template-columns: repeat(2, minmax(100px, 376px));
+    }
+    .titleH1 {
+        text-align: start !important;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .main__detail {
+        margin: 0 14%;
+        grid-gap: 0.5rem;
+        justify-content: start;
+        /* grid-template-columns: 34% 50%; */
+    }
+}
+
+.main__img--new {
+    width: 345px;
+}
+
+.titleH1 {
+    margin: 0 !important;
+}

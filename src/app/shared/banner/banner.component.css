@@ -1,4 +1,11 @@
 .hero__banner {
     min-height: 27vh;
     background-color: #15B9D5;
+    margin-bottom: 1rem;
+}
+
+@media all and (min-width: 533px) {
+    .hero__banner {
+        margin-bottom: 2rem;
+    }
 }
