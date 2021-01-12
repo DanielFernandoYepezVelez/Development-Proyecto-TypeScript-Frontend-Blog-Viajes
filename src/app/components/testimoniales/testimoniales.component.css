@@ -1,0 +1,66 @@
+.titleH1,
+.titleH2 {
+    text-align: center;
+}
+
+.main__container {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+}
+
+.main__form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Media Query Contenedor Form */
+
+@media all and (min-width: 650px) {
+    .main__form {
+        width: 600px;
+    }
+}
+
+.main__input {
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+.main__input label {
+    margin-bottom: .5rem;
+}
+
+.main__input input,
+textarea {
+    padding: .7rem;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    border: 1px solid gray;
+}
+
+.main__input textarea {
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+.main__btn {
+    outline: none;
+    margin-top: 1rem;
+    padding: .8rem 0;
+    color: #ffffff;
+    text-align: center;
+    border-radius: .8rem;
+    border-color: #DC135F;
+    text-transform: uppercase;
+    background-color: #DC135F;
+}
+
+.main__btn:hover {
+    cursor: pointer;
+    border-color: rgb(192, 7, 78);
+    background-color: rgb(154, 5, 73);
+}

@@ -1,16 +1,25 @@
-<h1>Testimoniales</h1>
-<h2>Agrega Un Testimoniales</h2>
+<h1 class="titleH1">Testimoniales</h1>
+<h2 class="titleH2">Agregar Un Testimonial</h2>
 
-<form action="">
+<main class="main__container">
+    <form action="" class="main__form">
+        <div class="main__input">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="#" placeholder="Nombre">
+        </div>
 
-    <label for="">Nombre</label>
-    <input type="text" name="" id="" placeholder="Nombre">
+        <div class="main__input">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" name="email" id="#" placeholder="Correo Electronico">
+        </div>
 
-    <label for="">Correo Electrónico</label>
-    <input type="text" name="" id="" placeholder="Correo Electronico">
+        <div class="main__input">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="#" cols="50" rows="5" placeholder="Mensaje"></textarea>
+        </div>
 
-    <label for="">Mensaje</label>
-    <textarea name="" id="" cols="50" rows="5"></textarea>
-
-    <button type="button">Enviar</button>
-</form>
+        <div class="main__input">
+            <input class="main__btn" type="submit" value="Enviar">
+        </div>
+    </form>
+</main>
