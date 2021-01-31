@@ -2,20 +2,23 @@
 <h2 class="titleH2">Agregar Un Testimonial</h2>
 
 <main class="main__container">
-    <form action="" class="main__form">
+    <form autocomplete="off" class="main__form" [formGroup]="formForma" (ngSubmit)="guardar()">
         <div class="main__input">
             <label for="name">Nombre</label>
-            <input type="text" name="name" id="#" placeholder="Nombre">
+            <input type="text" id="#" placeholder="Nombre" formControlName="name">
+            <small *ngIf="nameNoValido">Ingrese Mínimo 3 Letras</small>
         </div>
 
         <div class="main__input">
             <label for="email">Correo Electrónico</label>
-            <input type="email" name="email" id="#" placeholder="Correo Electronico">
+            <input type="email" name="email" id="#" placeholder="Correo Electronico" formControlName="email">
+            <small *ngIf="emailNoValido">Ingrese Un Correo Válido</small>
         </div>
 
         <div class="main__input">
             <label for="message">Mensaje</label>
-            <textarea name="message" id="#" cols="50" rows="5" placeholder="Mensaje"></textarea>
+            <textarea id="#" name="message" cols="50" rows="5" placeholder="Mensaje" formControlName="message"></textarea>
+            <small *ngIf="messageNoValido">Ingrese Mínimo 5 Letras</small>
         </div>
 
         <div class="main__input">
