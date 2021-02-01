@@ -8,12 +8,12 @@ import { ComponentsModule } from '../components/components.module';
 import { PagesRoutingModule } from './pages-routing.module';
 
 /* Components Propios */
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AgenciaComponent } from './agencia/agencia.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [LandingPageComponent, AgenciaComponent],
   imports: [SharedModule, ComponentsModule, PagesRoutingModule],
-  exports: [LandingPageComponent, AgenciaComponent]
+  exports: [LandingPageComponent, AgenciaComponent, PagesRoutingModule]
 })
 export class PagesModule { }

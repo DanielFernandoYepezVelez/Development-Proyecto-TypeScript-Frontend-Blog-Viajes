@@ -7,10 +7,11 @@ import { AppRoutingModule } from './app-routing.module';
 
 /* Components Propios */
 import { AppComponent } from './app.component';
+import { Page404Component } from './page404/page404.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, PagesModule],
+  declarations: [AppComponent, Page404Component],
+  imports: [BrowserModule, PagesModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
