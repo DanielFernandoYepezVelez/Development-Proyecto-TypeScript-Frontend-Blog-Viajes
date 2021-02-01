@@ -14,7 +14,7 @@ export interface Viaje {
     id: number;
     titulo: string;
     precio: number;
-    fecha_id: Date;
+    fecha_ida: Date;
     fecha_vuelta: Date;
     imagen: string;
     descripcion: string;
